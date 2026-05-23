@@ -7,6 +7,9 @@ mcp/dist/
 backend/server
 backend/server.exe
 
+# TypeScript build cache
+*.tsbuildinfo
+
 # Environment overrides
 .env
 
