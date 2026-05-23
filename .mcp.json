@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "english-tutor": {
+      "command": "node",
+      "args": ["./mcp/dist/index.js"],
+      "env": {
+        "TUTOR_API_URL": "http://localhost:8096/api"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
+/** Markdown renders trusted Markdown teaching content, GitHub tables included. */
+export default function Markdown({ content }: { content: string }) {
+  return (
+    <div className="markdown">
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+    </div>
+  );
+}

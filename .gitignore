@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+frontend/dist/
+mcp/dist/
+backend/server
+backend/server.exe
+
+# Environment overrides
+.env
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Claude Code local overrides
+.claude/settings.local.json

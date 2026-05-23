@@ -1,6 +1,6 @@
-# English Tutor
+# English Tutor Project
 
-Plateforme locale de révision d'anglais qui suit le cursus du cours de l'Institut Linguistique Provincial. Backend Go, frontend React, base PostgreSQL, le tout en conteneurs Docker. Un connecteur MCP permet de co-construire le contenu avec Claude.
+Plateforme locale et personnelle de révision d'anglais. Backend Go, frontend React, base PostgreSQL, le tout en conteneurs Docker. Un connecteur MCP permet de co-construire le contenu avec Claude.
 
 ---
 
@@ -44,12 +44,15 @@ La première construction prend quelques minutes. Ouvrir ensuite : <http://local
 
 ## Le cursus
 
-- **Introduction to Grammar** — 6 leçons complètes (explications et exercices interactifs).
+- **Introduction to Grammar** — 6 leçons complètes (16 topics, 96 exercices interactifs).
 - **Vocabulary** — leçon 1 complète, plus 88 termes à réviser ; leçons 2 à 6 à compléter.
-- **Level 1 à 4** — plan du cursus (titres des leçons) ; contenu à ajouter.
+- **Level 1** — 6 leçons complètes (Plurals, Present, Present Continuous, Past, Future, Yes/No Questions). 14 topics, 87 exercices.
+- **Level 2** — 6 leçons complètes (Stative Verbs, Past Continuous, Future Continuous, Present Perfect, Comparison of Adjectives, Possessive). 12 topics, 74 exercices.
+- **Level 3** — 6 leçons complètes (Present Perfect, Present Perfect Continuous, Past Perfect, Future Perfect, Conditional Sentences, Passive Voice). 13 topics, 79 exercices.
+- **Level 4** — 6 leçons complètes (Gerunds and Infinitives, Indirect Speech, Conditional Sentences, Passive Voice, Modals, The Tenses). 16 topics, 96 exercices.
 - **Exam Prep Quiz** — 100 questions couvrant toute l'*Introduction to Grammar*.
 
-> Les leçons sans contenu se remplissent via le connecteur MCP.
+> Contenu géré dans `backend/internal/seed/data/seed.json` au premier démarrage et complétable par la suite via le connecteur MCP (voir [`docs/seed-format.md`](docs/seed-format.md) pour le mode de chargement incrémental).
 
 ## Connecteur MCP
 
